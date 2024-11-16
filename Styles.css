@@ -1,0 +1,104 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-color: seagreen
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Shape Styles */
+.shapes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 shapes per row */
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+/* General Shape Styles */
+.shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Circle Shape */
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+}
+
+/* Square Shape */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #00ccff;
+    border-radius: 0%;
+}
+
+/* Rectangle Shape */
+.rectangle {
+    width: 120px; /* Make it wider to make it look like a rectangle */
+    height: 100px;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* Triangle Shape */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #66cc66;
+    display: inline-block;
+    transform: rotate(180deg); /* Correct orientation */
+}
+
+/* Hover Effect */
+.shape:hover {
+    opacity: 0.8;
+}
+
+/* Selected Shape Styles */
+.selected {
+    background-color: #00cc00;
+    color: white;
+}
+/* Chosen Shape Styles */
+.chosen {
+    background-color: #cccccc;
+    color: white;
+    cursor: not-allowed;
+    font-weight: bold; /* Make the text bold */
+}
+
+.shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .shape.chosen {
+        font-size: 16px; /* Slightly larger font size for better visibility */
+    }
